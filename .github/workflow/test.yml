@@ -1,16 +1,16 @@
 name: build-test
 on: [pull_request]
-  jobs:
-    build:
-      runs-on: ubuntu-lastest
-      strategy
-        matrix:
-          node:['16']
-      steps
-        - uses: actions/checkout@v2 //version del paquete
-        - name: Setup Node 16 // nombre de la accion que esta por pasar
-          uses: action/setup-node@v2
-          with:
-            node-version: 16.x
-        - run: npm install
-        - run: npm run lint
+jobs:
+  build:
+    runs-on: ubuntu-lastest
+    strategy
+      matrix:
+        node:['16']
+    steps
+      - uses: actions/checkout@v2
+      - name: Setup Node 16
+        uses: action/setup-node@v2
+        with:
+          node-version: 16.x
+      - run: npm install
+      - run: npm run lint
