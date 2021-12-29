@@ -2,7 +2,7 @@ name: build-test
 on: [pull_request]
 jobs:
   build:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     strategy
       matrix:
         node:['16']
