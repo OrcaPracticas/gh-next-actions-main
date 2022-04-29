@@ -5,4 +5,4 @@ export default function Home() {
       <h1>Hello Next.js23 {a}</h1>
     </>
   );
-};
+}
