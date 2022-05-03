@@ -14,3 +14,4 @@ jobs:
           node-version: 16.x
       - run: npm install
       - run: npm run lint
+      - run: echo "$(tput setab 17; tput bold)$(tput setaf 255; tput bold)HOLA$(tput sgr0)"
